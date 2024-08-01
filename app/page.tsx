@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <Container>
       <MainNav />
-      <main className="flex flex-col h-full items-start justify-evenly mt-16 md:flex-row">
+      <main className="flex flex-col h-full justify-center md:justify-evenly mt-16 md:flex-row">
         <div>
           <LatestPosts />
         </div>
