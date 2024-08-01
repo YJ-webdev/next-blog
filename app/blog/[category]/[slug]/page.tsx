@@ -7,6 +7,7 @@ import ReportViews from "@/app/components/ui/ReportView";
 import Container from "@/app/components/ui/Container";
 import { baseUrl } from "@/app/sitemap";
 import Header from "@/app/components/ui/Heaeder";
+import Image from "next/image";
 
 export async function generateStaticParams() {
   let posts = getBlogPosts();
@@ -115,8 +116,10 @@ export default function Page({
         </Container>
       </Header>
       <Container>
-        <article className="prose">
+        <article className="prose mt-10">
           <CustomMDX source={post.content} />
+          {/* <div className="mt-10 w-full flex-1 h-fit bg-blue-600 dark:bg-transparent border">
+          <Image src="/jaeman-jung.jpg" alt="Korea Jeju island" height={500} width={500} className="w-full h-full object-cover" /></div> */}
         </article>
       </Container>
     </>

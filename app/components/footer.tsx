@@ -17,8 +17,8 @@ export default function Footer() {
   return (
     <footer className="bg-gray-100 py-8 px-5 dark:bg-gray-800 mt-10">
       <div className="max-w-screen-xl mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
-          <div className="space-y-4">
+        <div className="grid grid-cols-2 gap-10 md:flex md:justify-between">
+          <div className="space-y-4 max-w-44 hidden md:block">
             <div className="flex items-center space-x-2">
               <Icons.logo className="h-6 w-6" />
               <span className="text-md font-semibold">지식 만화경</span>
@@ -132,6 +132,33 @@ export default function Footer() {
                 )}
               </div>
             </form>
+          </div>
+          <div className="space-y-4  md:hidden">
+            <div className="flex items-center space-x-2">
+              <Icons.logo className="h-6 w-6" />
+              <span className="text-md font-semibold">지식 만화경</span>
+            </div>
+            <p className="text-gray-500 dark:text-gray-400 text-sm">
+              최근 뉴스 및 소식 등 여러 기사를 통해 최신 소식을 확인해보세요.
+            </p>
+            <div className="flex space-x-4 justify-end">
+              <a
+                href="https://twitter.com/w3tsadev"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+              >
+                <Icons.twitter className="h-6 w-6 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300" />
+              </a>
+              <a
+                href="https://github.com/w3tsadev"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Github"
+              >
+                <Icons.gitHub className="h-6 w-6 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300" />
+              </a>
+            </div>
           </div>
         </div>
         <div className="mt-8 border-t border-gray-200 pt-4 text-center text-xs text-gray-500 dark:border-gray-700 dark:text-gray-400">
