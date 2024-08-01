@@ -37,7 +37,9 @@ export default function Page({ params }: { params: { category: string } }) {
       <Header>
         <Container>
           <h1 className="title font-semibold text-2xl tracking-wider mt-4 uppercase">
-            {posts[0]?.metadata.category}
+            {posts[0]?.metadata.category === "food-drink" && "음식"}  {posts[0]?.metadata.category === "hobbies-activities" && "취미 및 활동"}{posts[0]?.metadata.category === "travel" && "여행"}{posts[0]?.metadata.category === "beauty" && "미용"}
+            {posts[0]?.metadata.category === "wedding-party" && "웨딩 및 이벤트"}
+            {posts[0]?.metadata.category === "health-wellness" && "건강 및 웰빙"}{posts[0]?.metadata.category === "vacation" && "여행"}{posts[0]?.metadata.category === "hot-items" && "유용한 아이템"}
           </h1>
         </Container>
       </Header>

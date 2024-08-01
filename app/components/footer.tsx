@@ -15,13 +15,13 @@ export default function Footer() {
   const [state, dispatch] = useFormState(createSubscriber, initialState);
   
   return (
-    <footer className="bg-gray-100 py-8 dark:bg-gray-800 mt-10">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+    <footer className="bg-gray-100 py-8 px-5 dark:bg-gray-800 mt-10">
+      <div className="max-w-screen-xl mx-auto px-4 md:px-6">
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <Icons.logo className="h-6 w-6" />
-              <span className="text-md font-semibold">현명한 소비</span>
+              <span className="text-md font-semibold">지식 만화경</span>
             </div>
             <p className="text-gray-500 dark:text-gray-400 text-sm">
               최근 뉴스 및 소식 등 여러 기사를 통해 최신 소식을 확인해보세요.
@@ -135,7 +135,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-gray-200 pt-4 text-center text-xs text-gray-500 dark:border-gray-700 dark:text-gray-400">
-          &copy; 2024 현명한 소비. All rights reserved.
+          &copy; 2024 지식 만화경. All rights reserved.
         </div>
       </div>
     </footer>

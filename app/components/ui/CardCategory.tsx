@@ -14,13 +14,13 @@ export default function CardCategory({
   return (
     <Card className="w-[350px] h-full shadow-lg">
       <CardHeader>
-        <CardTitle className="tracking-wider leading-normal">{title}</CardTitle>
+        <CardTitle className="tracking-wide leading-normal">{title}</CardTitle>
       </CardHeader>
       <CardContent>
-        <p>{summary}</p>
+        <p className="text-muted-foreground tracking-normal leading-relaxed">{summary}</p>
       </CardContent>
       <CardFooter>
-        <p className="text-xs text-gray-500 leading-5">{formatDate(date)}</p>
+        <p className="text-xs text-gray-500">{formatDate(date)}</p>
       </CardFooter>
     </Card>
   );

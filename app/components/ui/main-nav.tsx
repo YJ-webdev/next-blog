@@ -25,14 +25,14 @@ export function MainNav({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "flex flex-col items-start justify-start md:flex-row md:items-center md:justify-between pt-10 z-50",
+        " flex justify-between items-center pt-10 z-50",
         className
       )}
     >
       <Link href={"/"}>
         <div className="flex items-center justify-between w-full">
           <Icons.logo className="h-6 w-6 mr-2" />
-          <p>현명한 소비</p>
+          <p className="hidden md:block">지식 만화경</p>
         </div>
       </Link>
       <NavigationMenu>
