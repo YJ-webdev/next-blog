@@ -5,6 +5,7 @@ import PopularPosts from "./components/home/popular-posts";
 import TopCatogories from "./components/home/top-categories";
 import Container from "./components/ui/Container";
 import { MainNav } from "./components/ui/main-nav";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -23,9 +24,10 @@ export default function Home() {
           </div>
             <h1 className="mt-10  font-bold mb-4">인기 포스트</h1>
             <PopularPosts />
+            <Link href="https://www.coupang.com" target="_blank">
             <div className="mt-10 w-full h-fit bg-blue-600 dark:bg-transparent">
               <Image src="/coupang-round.png" alt="쿠팡" width={500} height={500} className="w-full h-40 object-scale-down" />
-            </div>
+            </div></Link>
           </div>
         </div>
       </main>
